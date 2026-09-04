@@ -1,9 +1,10 @@
-#Expense Tracker API
+Expense Tracker API
 
 A beginner-friendly REST API built with Python, FastAPI, SQLAlchemy, and SQLite for managing personal expenses.
 
 The API supports creating, viewing, updating, deleting, filtering, and summarizing expenses through REST endpoints.
-##FEATURES
+
+FEATURES
 
 - Create, read, update, and delete expenses (CRUD)
 - Filter expenses by category
@@ -16,7 +17,7 @@ The API supports creating, viewing, updating, deleting, filtering, and summarizi
 - Return appropriate 404 errors when an expense is not found
 
 
-##TECH STACK
+TECH STACK
 
 - Python
 - FastAPI
@@ -28,7 +29,7 @@ The API supports creating, viewing, updating, deleting, filtering, and summarizi
 The project uses FastAPI, Uvicorn, SQLAlchemy, and Pydantic as its main dependencies.
 
 
-##PROJECT STRUCTURE
+PROJECT STRUCTURE
 
 Expense-Tracker-REST-API/
 |
@@ -43,7 +44,7 @@ Expense-Tracker-REST-API/
 The application is implemented in app.py. The SQLite database is configured as expenses.db.
 
 
-##DATABASE MODEL
+DATABASE MODEL
 
 The API stores expenses in an "expenses" table.
 
@@ -58,7 +59,7 @@ Each expense contains:
 The id field is the primary key. The title and category have length restrictions, while the amount must be greater than zero.
 
 
-##SETUP
+SETUP
 
 1. Clone the repository
 
@@ -111,7 +112,7 @@ http://127.0.0.1:8000/redoc
 You can use Swagger UI to send requests and test the API directly from your browser.
 
 
-##API ENDPOINTS
+API ENDPOINTS
 
 GET     /                              Check whether the API is running
 POST    /expenses                      Create a new expense
@@ -270,7 +271,7 @@ Example response:
 The summary uses SQL aggregation with GROUP BY and SUM to calculate total spending for each category. Results are ordered from the highest total spending to the lowest.
 
 
-##EXAMPLE API WORKFLOW
+EXAMPLE API WORKFLOW
 
 Create expenses:
 
@@ -323,7 +324,7 @@ DELETE /expenses/1
 These example requests are also included in the project's sample_requests.json file.
 
 
-##VALIDATION
+VALIDATION
 
 The API uses Pydantic models to validate incoming data.
 
@@ -337,7 +338,7 @@ For creating an expense:
 For updating an expense, all fields are optional, allowing individual values to be changed.
 
 
-##DATABASE
+DATABASE
 
 The application uses SQLite for data storage and SQLAlchemy to interact with the database.
 
@@ -362,7 +363,7 @@ This project demonstrates practical backend development concepts including:
 - Interactive API documentation
 
 
-##POINTS
+INTERVIEW TALKING POINTS
 
 Why FastAPI?
 
@@ -393,7 +394,7 @@ How does the update operation work?
 The update endpoint accepts optional fields and updates only the fields provided by the client.
 
 
-##FUTURE IMPROVEMENTS
+FUTURE IMPROVEMENTS
 
 Possible improvements for future versions include:
 
@@ -409,7 +410,6 @@ Possible improvements for future versions include:
 - Add a frontend application
 
 
-##.GITIGNORE
+.GITIGNORE
 
 The project excludes the local SQLite database, virtual environments, Python cache files, and environment files from Git.
-
