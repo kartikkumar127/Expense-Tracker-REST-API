@@ -1,0 +1,54 @@
+[
+  {
+    "method": "POST",
+    "path": "/expenses",
+    "body": {
+      "title": "Groceries",
+      "category": "Food",
+      "amount": 850,
+      "expense_date": "2026-09-01"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/expenses",
+    "body": {
+      "title": "Bus pass",
+      "category": "Transport",
+      "amount": 500,
+      "expense_date": "2026-09-01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/expenses",
+    "body": null
+  },
+  {
+    "method": "GET",
+    "path": "/expenses?category=Food",
+    "body": null
+  },
+  {
+    "method": "GET",
+    "path": "/expenses/1",
+    "body": null
+  },
+  {
+    "method": "PUT",
+    "path": "/expenses/1",
+    "body": {
+      "amount": 900
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/expenses/summary/by-category",
+    "body": null
+  },
+  {
+    "method": "DELETE",
+    "path": "/expenses/1",
+    "body": null
+  }
+]
