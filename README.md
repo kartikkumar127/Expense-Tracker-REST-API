@@ -416,36 +416,6 @@ This project demonstrates practical backend development concepts including:
 * `GROUP BY` and `SUM`
 * Interactive API documentation
 
-## Interview Talking Points
-
-### Why FastAPI?
-
-FastAPI is used to build the REST API and provides automatic request validation and interactive API documentation.
-
-### Why Pydantic?
-
-Pydantic is used to validate incoming request data before it is processed by the application.
-
-### Why SQLAlchemy?
-
-SQLAlchemy provides an ORM layer for interacting with the SQLite database using Python objects and models.
-
-### How is validation handled?
-
-Pydantic models define the expected structure and validation rules for incoming expense data.
-
-### How does filtering work?
-
-The `/expenses` endpoint accepts an optional `category` query parameter. When provided, the database query filters expenses by that category.
-
-### How does the spending summary work?
-
-The category summary groups expenses by category and uses SQL `SUM` to calculate the total amount spent in each category.
-
-### How does the update operation work?
-
-The update endpoint accepts optional fields and updates only the fields provided by the client.
-
 ## Future Improvements
 
 Possible improvements for future versions include:
@@ -464,15 +434,3 @@ Possible improvements for future versions include:
 ## .gitignore
 
 The project excludes the local SQLite database, virtual environments, Python cache files, and environment files from Git.
-
-## Author
-
-**Kartik Kumar**
-
-GitHub:
-
-https://github.com/kartikkumar127/Expense-Tracker-REST-API
-
-## License
-
-This project was created for learning and demonstration purposes.
